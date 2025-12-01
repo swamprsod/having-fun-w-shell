@@ -1,0 +1,25 @@
+#!/bin/bash
+NAPO_LIST="/tmp/napo_list"
+
+if [ "$1" = "-h" ]; then
+	echo "usage:"
+	echo "napo [OPTION]..."
+	echo ""
+	echo "-h      help"
+	echo "-t      napominaniye"
+	echo "-l      list napominalok"
+fi
+
+if [ "$1" = "-t" ]; then
+	echo "text:"
+	read text
+
+	echo "time:"
+	read time
+	echo "$(date '+%H:%M:%S')      $text <> $time" >> "$NAPO_LIST"
+	(sleep $time && swaynag -m $text && sed -i "/$text/d" "$NAPO_LIST") &
+fi
+
+if [ "$1" = "-l" ]; then
+	cat $NAPO_LIST
+fi
