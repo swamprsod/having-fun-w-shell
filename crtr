@@ -1,0 +1,5 @@
+#!/bin/env sh
+
+swaynag --background FFFFFF50 --text 000000 -e bottom --button-background FFFFFF50 --button-border-size 0 --button-text FFFFFF50 --font Terminus -m "$(mpc | sed -n 1p)" &
+sleep 1.3 
+pkill swaynag

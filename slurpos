@@ -1,0 +1,3 @@
+#!/bin/env sh
+SLURPED=$(slurp)
+swaynag --background D37373 --text 000000 -e bottom --button-background 000000 --button-border-size 1 --button-text FFFFFF --button-margin-right 85 -s "                                                                                                $SLURPED                                                                                        " --font TerminusBold -m $SLURPED &

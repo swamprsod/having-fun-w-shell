@@ -1,0 +1,2 @@
+#!/bin/env sh
+wf-recorder --audio -f "/home/rsod/screenshots/$(date +'%Y-%m-%d_%H-%M-%S').mp4" --codec h264_vaapi -d /dev/dri/renderD128 -a "alsa_input.pci-0000_00_1b.0.analog-stereo"
