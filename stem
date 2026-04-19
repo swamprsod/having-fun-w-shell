@@ -1,10 +1,10 @@
 #!/bin/bash
 
 games=(
+  "KoG/gores|pkill v2raya || swaymsg exec ddnet"
   "Minecraft|swaymsg exec 'QT_QPA_PLATFORM=xcb GDK_BACKEND=x11 prismlauncher'"
-  "osu!|swaymsg exec osu"
-  "Geometry Dash|cd ~/games/gd/gdsub && WINEPREFIX=~/.wine-geometrydash WINEDLLOVERRIDES='xinput1_4=n,b' wine GeometryDash.exe"
-  "Super Meat Boy|cd ~/games/smb/ && ./start.bash"
+  "Turing Complete|cd ~/games/tc/ && ./start"
+  "tmod/Terraria|~/games/teraria/tmod/st.sh"
 )
 
 selected=0
