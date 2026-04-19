@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env sh
 
 games=(
   "KoG/gores|pkill v2raya || swaymsg exec ddnet"
